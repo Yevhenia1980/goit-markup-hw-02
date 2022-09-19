@@ -175,7 +175,6 @@ body {
 }
 
 .slogan-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: var(--main-letter-spacing);
@@ -231,7 +230,6 @@ body {
   color: var(--title-text-color);
 }
 .command-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -260,7 +258,6 @@ body {
 }
 
 .footer-adress-link {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: var(--main-letter-spacing);
@@ -269,9 +266,6 @@ body {
 }
 
 .footer-link {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1, 71;
   letter-spacing: var(--main-letter-spacing);
@@ -284,11 +278,12 @@ body {
   color: var(--focus-color);
 }
 
+/*-------------portfolio------------- */
+
 .main-nav-list {
 }
 
 .btn {
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -299,14 +294,18 @@ body {
 }
 
 .nav-btn {
+  font-family: inherit;
   background: var(--focus-color);
   color: #ffffff;
 }
+
 .portfolio-list {
 }
+
 .portfolio-item {
   background: var(--background-color);
 }
+
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
@@ -314,8 +313,8 @@ body {
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
+
 .portfolio-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: var(--main-letter-spacing);
