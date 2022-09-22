@@ -1,5 +1,5 @@
 :root {
-  --background-color: #f5f5f5;
+  --background-color: #fff;
   --background-accent-color: #2f303a;
   --main-text-color: #ffffff;
   --title-text-color: #212121;
@@ -7,6 +7,8 @@
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --main-letter-spacing: 0.03em;
   --link-text-color: #757575;
+  --background-btn: #f5f4fa;
+  --background-focus-color: #188ce8;
 }
 
 /* @font-face {
@@ -38,6 +40,8 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: var(--background-color);
   color: var(--title-text-color);
+  font-size: 14px;
+  letter-spacing: var(--main-letter-spacing);
 }
 
 /* ------------------header--------------- */
@@ -60,7 +64,6 @@ body {
 
 .header-logo {
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -73,15 +76,14 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: -#212121;
+  color: var(--title-text-color);
 }
 
 .header-contact-list {
 }
-
-.header-mail .header-tel {
+.header-tel,
+.header-mail {
   font-weight: 500;
-  font-style: normal;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -98,17 +100,20 @@ body {
 
 .header-mail:hover,
 .header-mail:focus {
-  color: var(--focus-color);
+  color: var(--background-focus-color);
 }
 
 .header-tel:hover,
 .header-tel:focus {
-  color: var(--focus-color);
+  color: var(--background-focus-color);
 }
 
 .header-link:hover,
 .header-link:focus {
-  color: var(--focus-color);
+  color: var(--background-focus-color);
+}
+.current {
+  color: var(--background-focus-color);
 }
 
 /*------------------- main --------------*/
@@ -139,10 +144,12 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
   cursor: pointer;
+  background: var(--focus-color);
 }
 
-/*---------------------- .slogan ---------------- */
-.slogan {
+/*---------------------- .benefits ---------------- */
+.benefits {
+  background-color: var(--background-color);
 }
 
 .visually-hidden {
@@ -159,13 +166,13 @@ body {
   overflow: hidden;
 }
 
-.slogan-list {
+.benefits-list {
 }
 
-.slogan-item {
+.benefits-item {
 }
 
-.slogan-title {
+.benefits-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -174,7 +181,7 @@ body {
   color: var(--title-text-color);
 }
 
-.slogan-text {
+.benefits-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: var(--main-letter-spacing);
@@ -203,11 +210,13 @@ body {
 
 .about-img {
 }
-/*---------- .command---------- */
+/*---------- .team------------- */
 
-.command {
+.team {
+  background: var(--background-btn);
 }
-.command-title {
+
+.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -215,13 +224,17 @@ body {
   letter-spacing: var(--main-letter-spacing);
   color: var(--title-text-color);
 }
-.command-list {
+
+.team-list {
 }
-.command-item {
+
+.team-item {
 }
-.command-img {
+
+.team-img {
 }
-.command-top-text {
+
+.team-top-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -229,7 +242,7 @@ body {
   letter-spacing: var(--main-letter-spacing);
   color: var(--title-text-color);
 }
-.command-text {
+.team-text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -267,7 +280,7 @@ body {
 
 .footer-link {
   font-size: 14px;
-  line-height: 1, 71;
+  line-height: 1.71;
   letter-spacing: var(--main-letter-spacing);
   color: var(--footer-text-color);
   cursor: pointer;
@@ -275,7 +288,7 @@ body {
 
 .footer-link:hover,
 .footer-link:focus {
-  color: var(--focus-color);
+  color: var(--background-focus-color);
 }
 
 /*-------------portfolio------------- */
@@ -283,7 +296,13 @@ body {
 .main-nav-list {
 }
 
+.btn:hover,
+.btn:focus {
+  background: var(--background-focus-color);
+  color: var(--main-text-color);
+}
 .btn {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -294,9 +313,8 @@ body {
 }
 
 .nav-btn {
-  font-family: inherit;
-  background: var(--focus-color);
-  color: #ffffff;
+  background: var(--background-btn);
+  color: var(--title-text-color);
 }
 
 .portfolio-list {
