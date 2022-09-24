@@ -315,6 +315,7 @@ body {
 .nav-btn {
   background: var(--background-btn);
   color: var(--title-text-color);
+  letter-spacing: var(--main-letter-spacing);
 }
 
 .portfolio-list {
